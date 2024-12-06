@@ -1,0 +1,117 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--theme-normal: #3a4663;
+	--theme-normal-body-text: #ffffff;
+	--theme-normal-input-color: #181f33;
+	--theme-normal-egal-color: #d03f2f;
+	--theme-normal-theme-bar: #242d44;
+	--theme-normal-del-reset-color: #647198;
+	--theme-normal-shadow-text-color: #b3a497;
+	--theme-normal-shadow-del-rest-color: #414e73;
+	--theme-normal-shadow-egal-color: #93261a;
+
+	--theme-light: #e6e6e6;
+	--theme-light-body-text: #36362c;
+	--theme-light-input-color: #eeeeee;
+	--theme-normal-theme-bar: #d2cdcd;
+	--theme-light-egal-color: #c85402;
+	--theme-light-del-reset-color: #378187;
+	--theme-light-shadow-text-color: #a79e91;
+	--theme-normal-shadow-del-rest-color: #1b6066;
+	--theme-normal-shadow-egal-color: #873901;
+
+	--theme-dark: #e6e6e6;
+	--theme-dark-body-text: #36362c;
+	--theme-dark-input-color: #eeeeee;
+	--theme-dark-theme-bar: #d2cdcd;
+	--theme-dark-egal-color: #c85402;
+	--theme-dark-del-reset-color: #378187;
+	--theme-dark-shadow-text-color: #a79e91;
+	--theme-dark-shadow-del-rest-color: #1b6066;
+	--theme-dark-shadow-egal-color: #873901;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+body.normal {
+	background-color: var(--theme-normal);
+	color: var(--theme-normal-body-text);
+}
+
+body.light {
+	background-color: var(--theme-light);
+	color: var(--theme-light-body-text);
+}
+
+main {
+	width: 70%;
+	height: 90%;
+}
+
+header {
+	padding: 20px;
+}
+
+nav {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.bar {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+
+.bar input {
+	width: 90%;
+	border-radius: 10px;
+	border: none;
+	padding: 30px;
+}
+
+body.normal input {
+	background-color: var(--theme-normal-input-color);
+}
+
+body.light input {
+	background-color: var(--theme-light-input-color);
+}
+
+body.dark input {
+	background-color: var(--theme-dark-input-color);
+}
+
+.tableau {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 10px;
+}
+
+.blanc {
+	padding: 20px;
+}
+
+.del {
+	padding: 20px;
+}
+
+.result {
+	display: flex;
+	flex-direction: row;
+}
+
+

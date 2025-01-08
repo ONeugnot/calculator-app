@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Bayon&family=Big+Shoulders+Display:wght@100..900&family=Chango&family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jua&family=League+Spartan:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: "League Spartan", serif;
 }
 
 :root {
@@ -54,8 +57,12 @@ body.light {
 }
 
 main {
-	width: 70%;
-	height: 90%;
+	width: 85%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 20px;
 }
 
 header {
@@ -69,15 +76,21 @@ nav {
 	justify-content: space-between;
 }
 
+nav p {
+	font-size: 32px;
+	font-weight: 700;
+}
+
 .bar {
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	padding: 20px;
+	padding: 0;
 }
 
 .bar input {
-	width: 90%;
+	width: 100%;
 	border-radius: 10px;
 	border: none;
 	padding: 30px;
@@ -95,23 +108,110 @@ body.dark input {
 	background-color: var(--theme-dark-input-color);
 }
 
+article {
+	display: flex;
+	gap: 30px;
+	flex-direction: column;
+
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 60px;
+}
+
+.all {
+	background-color: #242d44;
+	gap: 20px;
+	padding: 10px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.right-nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+}
+
+.right-nav span {
+	font-size: 12px;
+	font-weight: 700;
+}
+
+button {
+	cursor: pointer;
+}
+
+.theme button {
+	padding: 10px;
+	text-align: center;
+	background-color: #242d44;
+	color: white;
+	border: none;
+}
+
 .tableau {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	gap: 10px;
+	color: #434a59;
 }
 
 .blanc {
 	padding: 20px;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0px -4px 0px 0px #b3a497 inset;
+	background-color: #eae3dc;
+	font-size: 32px;
+	font-weight: 700;
 }
 
-.del {
+.DEL {
+	border-radius: 10px;
 	padding: 20px;
+	border: none;
+	background-color: #647198;
+	color: white;
+	box-shadow: 0px -4px 0px 0px #414e73 inset;
 }
 
 .result {
+	border-radius: 10px;
+	border: none;
 	display: flex;
 	flex-direction: row;
 }
 
+.result {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: center;
+	gap: 10px;
+}
 
+.egal {
+	width: 40%;
+	border-radius: 10px;
+	padding: 20px;
+	border: none;
+	box-shadow: 0px -4px 0px 0px #93261a inset;
+	background-color: #d03f2f;
+	color: white;
+	font-weight: 700;
+	font-size: 28px;
+}
+
+.RES {
+	width: 40%;
+	padding: 20px;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0px -4px 0px 0px #414e73 inset;
+	background-color: #647198;
+	color: white;
+	font-weight: 700;
+	font-size: 28px;
+}
